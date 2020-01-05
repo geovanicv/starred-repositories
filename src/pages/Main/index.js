@@ -90,7 +90,7 @@ export default class Main extends Component {
             {loading ? (
               <ActivityIndicator color="#FFF" />
             ) : (
-              <Icon name="add" sixe={20} color="#FFF" />
+              <Icon name="add" size={20} color="#FFF" />
             )}
           </SubmitButton>
         </Form>

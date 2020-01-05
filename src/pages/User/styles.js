@@ -9,7 +9,7 @@ export const Header = styled.View`
   align-items: center;
   padding-bottom: 20px;
   border-bottom-width: 1px;
-  border-color: #333;
+  border-color: #eee;
 `;
 export const Avatar = styled.Image`
   width: 100px;
@@ -65,4 +65,11 @@ export const Author = styled.Text`
   font-size: 13px;
   color: #666;
   margin-top: 2px;
+`;
+
+export const Loading = styled.ActivityIndicator`
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 `;
