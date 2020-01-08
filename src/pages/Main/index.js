@@ -116,7 +116,7 @@ export default class Main extends Component {
 }
 
 Main.navigationOptions = {
-  title: 'Usuarios',
+  title: 'Usuários',
 };
 
 Main.propTypes = {
