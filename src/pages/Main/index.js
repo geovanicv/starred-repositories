@@ -71,6 +71,17 @@ export default class Main extends Component {
     navigation.navigate('User', {user});
   };
 
+  handleRemove = user => {
+    const {users} = this.state;
+    const novo = users.filter(item => item !== user);
+
+    this.setState({
+      users: novo,
+      newUser: '',
+      loading: false,
+    });
+  };
+
   render() {
     const {users, newUser, loading} = this.state;
 
@@ -106,6 +117,9 @@ export default class Main extends Component {
 
               <ProfileButton onPress={() => this.handleNavigate(item)}>
                 <ProfileButtonText>Ver Perfil</ProfileButtonText>
+              </ProfileButton>
+              <ProfileButton onPress={() => this.handleRemove(item)}>
+                <ProfileButtonText>Remover</ProfileButtonText>
               </ProfileButton>
             </User>
           )}
